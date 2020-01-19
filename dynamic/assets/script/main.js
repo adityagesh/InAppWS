@@ -1,5 +1,6 @@
 import { api_url } from './api.js';
-function getData() {
+
+window.getData = function(id) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function(data) {
     if (this.readyState == 4 && this.status == 200) {
@@ -14,8 +15,8 @@ function getData() {
       console.log(this.readyState, this.status)
     }
   }
-  xhttp.open("get",api_url, true)
+  let req_url = api_url+`/${id}`;
+  console.log(req_url)
+  xhttp.open("get",req_url, true)
   xhttp.send()
 }
-
-window.onload = getData();

@@ -2,12 +2,14 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
-
+<div style="text-align:center">
+	<input id="userid" onchange="getData(this.value)" placeholder="Enter user id" type="text"/>
+</div>
 <h2 style="text-align:center">User Profile Card</h2>
-
 <div class="card">
   <img id="imgurl" src="" alt="IMGURL" style="width:100%">
   <h1 id="name">NAME</h1>

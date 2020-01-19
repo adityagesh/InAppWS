@@ -1,1 +1,1 @@
-export let api_url = "http://demo6182181.mockable.io/";
+export let api_url = "http://demo6182181.mockable.io";
