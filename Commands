@@ -1,0 +1,10 @@
+
+scp -i keypair.pem -r folder user@ec2:~
+
+sudo apt-get update
+sudo apt-get install mysql-server mysql-client
+mysql --version	
+mysql -h -u -p
+apt-get install apache2
+service apache2 start    /var/www/html
+service apache2 reload
