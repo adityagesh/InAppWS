@@ -8,3 +8,12 @@ mysql -h -u -p
 apt-get install apache2
 service apache2 start    /var/www/html
 service apache2 reload
+
+{
+ "id": "1",
+ "name": "Aditya",
+ "title": "Programmer",
+ "imgurl": "",
+ "desc": "InApp",
+ "phone": "9497268244"
+}

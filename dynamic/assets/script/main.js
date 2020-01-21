@@ -15,7 +15,7 @@ window.getData = function(id) {
       console.log(this.readyState, this.status)
     }
   }
-  let req_url = api_url+`/${id}`;
+  let req_url = api_url+`/users/${id}`;
   console.log(req_url)
   xhttp.open("get",req_url, true)
   xhttp.send()
